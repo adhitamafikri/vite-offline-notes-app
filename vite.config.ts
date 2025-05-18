@@ -8,6 +8,9 @@ export default defineConfig({
   server: {
     host: "vite-offline-notes-app.localhost",
   },
+  define: {
+    global: "window",
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
